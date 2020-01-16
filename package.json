@@ -1,0 +1,134 @@
+{
+	"name": "ahost",
+	"displayName": "ahost",
+	"description": "A easy host admin tools for web devlop",
+	"version": "0.0.1",
+	"keywords": [
+		"Host",
+		"Easy User",
+		"Tool"
+	],
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:ahost",
+		"onView:ahost"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"languages": [
+      {
+        "id": "ahost",
+        "extensions": [
+          ".host"
+				],
+				"aliases": [
+					"host"        
+				]
+      }
+		],
+		"grammars": [
+			{
+					"language": "ahost",
+					"scopeName": "source.ahost",
+					"path": "./syntaxes/ahost.tmLanguage.json"
+			}
+		],
+		"views": {
+		  "explorer": [
+			{
+			  "id": "ahost",
+			  "name": "ahost"
+			}
+		  ]
+		},		
+		"commands": [
+			{
+				"command": "extension.helloWorld",
+				"title": "Hello World"
+			},
+			{
+				"command": "ahost.choose",
+				"title": "Choose"
+			},
+			{
+				"command": "ahost.unchoose",
+				"title": "UnChoose"
+			},
+			{
+				"command": "ahost.rename",
+				"title": "Rename"
+			},
+			{
+				"command": "ahost.delete",
+				"title": "Delete"
+			},
+			{
+				"command": "ahost.add",
+				"title": "Add",
+				"icon": {
+          "light": "resources/light/add.svg",
+          "dark": "resources/dark/add.svg"
+        }
+			}
+		],
+		"menus": {
+			"view/title": [
+        {
+          "command": "ahost.add",
+          "when": "view == ahost",
+          "group": "navigation@1"
+        }
+      ],
+			"view/item/context": [
+				{
+					"command": "ahost.unchoose",
+					"when": "view == ahost && viewItem == ahostItem1",
+					"group": "ahost@1"
+				},
+				{
+					"command": "ahost.choose",
+					"when": "view == ahost && viewItem == ahostItem0",
+					"group": "ahost@1"
+				},
+				{
+					"command": "ahost.rename",
+					"when": "view == ahost && viewItem =~ /ahostItem/i",
+					"group": "ahost@1"
+				},
+				{
+					"command": "ahost.delete",
+					"when": "view == ahost && viewItem =~ /ahostItem/i",
+					"group": "ahost@1"
+				},
+				{
+					"command": "ahost.add",
+					"when": "view == ahost && viewItem =~ /ahostItem/i",
+					"group": "ahost@1"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.41.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.2.0"
+	}
+}

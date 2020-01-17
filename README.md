@@ -1,65 +1,28 @@
-# ahost README
+# AHost README English|[中文](README.cn.md)
 
-This is the README for your extension "ahost". After writing up a brief description, we recommend including the following sections.
+Ahost is a lightweight vscode plugin for managing  hosts file.
 
 ## Features
+* Add Host File
+* Delete Host File
+* Rename Host File
+* Choose Host File
+* UnChoose Host File
+* Edit Host File
+  
+## Usage
+* `Add Host File`: When you open VS Code ,in Explorer of VS Code, click "AHOST" in the bottom left corner, then click the '+' button to add your host file. 
+* `Delete Host File`: Move mouse to the host you want to delete and right-click, then click the 'Delete' menu item.
+* `Rename Host File`: Move mouse to the host you want to rename and right-click, then click the 'Rename' menu item.
+* `Choose Host File`: Move mouse to the host you want to choose and right-click, then click the 'Choose' menu item.
+* `UnChoose Host File`: Move mouse to the host you want to choose and right-click, then click the 'UnChoose' menu item.
+* `Edit Host File`: Click the Host you want to edit, and just edit it in VS Code.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Screenshot
+![](https://user-gold-cdn.xitu.io/2020/1/17/16fb14aa2764ba17?w=1357&h=726&f=png&s=76403)
 
-For example if there is an image subfolder under your extension project workspace:
+## Issues
+ If you find any bug or have any suggestion/feature request, please submit the [issues](https://github.com/gamedilong/ahost/issues) to the GitHub Repo. Or you can send email to 1104238614@qq.com.
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## Copyright
+It is released under the MIT license.

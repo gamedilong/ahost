@@ -1,13 +1,23 @@
 {
 	"name": "ahost",
 	"displayName": "ahost",
-	"description": "A easy host admin tools for web devlop",
+	"description": "A lightweight host admin tools for web devlop",
 	"version": "0.0.1",
 	"keywords": [
 		"Host",
 		"Easy User",
 		"Tool"
 	],
+	"bugs": {
+		"url": "https://github.com/gamedilong/ahost/issues",
+		"email": "1104238614@qq.com"
+	},
+	"homepage": "https://github.com/gamedilong/ahost",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gamedilong/ahost.git"
+	},	
+	"icon": "logo.png",
 	"engines": {
 		"vscode": "^1.31.0"
 	},

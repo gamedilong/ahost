@@ -1,6 +1,7 @@
 {
 	"name": "ahost",
 	"displayName": "ahost",
+	"publisher": "gamedilong",
 	"description": "A lightweight host admin tools for web devlop",
 	"version": "0.0.1",
 	"keywords": [
@@ -58,10 +59,6 @@
 		},		
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			},
-			{
 				"command": "ahost.choose",
 				"title": "Choose"
 			},
@@ -81,9 +78,9 @@
 				"command": "ahost.add",
 				"title": "Add",
 				"icon": {
-          "light": "resources/light/add.svg",
-          "dark": "resources/dark/add.svg"
-        }
+				"light": "resources/light/add.svg",
+				"dark": "resources/dark/add.svg"
+				}
 			}
 		],
 		"menus": {

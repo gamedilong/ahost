@@ -7,9 +7,6 @@ export function activate(context: vscode.ExtensionContext) {
     const ahostTreeDataProvider = new AHostTreeDataProvider(context);
     context.subscriptions.push(vscode.window.registerTreeDataProvider("ahost", ahostTreeDataProvider));
 
-	let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
-		vscode.window.showInformationMessage('Hello World!');
-	});
 	let chooseHost = vscode.commands.registerCommand('ahost.choose', (item: HostConfig) => {
 		ahostTreeDataProvider.choose(item);
 	});
@@ -39,7 +36,6 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(chooseHost);
 	context.subscriptions.push(unchooseHost);
 	context.subscriptions.push(editHost);
-	context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated

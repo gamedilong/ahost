@@ -21,6 +21,9 @@ Ahost 是一个轻量级用于host文件管理的VS Code插件.
 ## 截屏
 ![](https://user-gold-cdn.xitu.io/2020/1/17/16fb14aa2764ba17?w=1357&h=726&f=png&s=76403)
 
+## 注意事项
+使用时需管理员模式下打开vscode，否则会因为无写入文件权限导致报错。
+
 ## Issues
  如果发现了任何Bug或者有任何建议, 可以提交 [issues](https://github.com/gamedilong/ahost/issues) 到Github 仓库. 或者直接邮件到 1104238614@qq.com.
 
